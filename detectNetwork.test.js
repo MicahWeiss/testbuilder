@@ -18,7 +18,7 @@ describe('Introduction to Mocha Tests - READ ME FIRST', function() {
   // You will not be able to proceed with a failing test. 
 
   it('Throws an error so it fails', function() {
-    throw new Error('Delete me!');
+
   });
 
   it('Doesn\'t throw an error, so it doesn\'t fail', function() {
@@ -45,7 +45,6 @@ describe('Diner\'s Club', function() {
   // Be careful, tests can have bugs too...
 
   it('has a prefix of 38 and a length of 14', function() {
-    throw new Error('Delete me!');
  
     if (detectNetwork('38345678901234') !== 'Diner\'s Club') {
       throw new Error('Test failed');
@@ -84,7 +83,7 @@ describe('Visa', function() {
   // Chai provides an assert that acts the same as our previous assert.
   // Search the documentation to figure out how to access it. 
   //   http://chaijs.com/
-  var assert = chai.FILL_ME_IN;
+  var assert = chai.assert;
  
 
   it('has a prefix of 4 and a length of 13', function() {

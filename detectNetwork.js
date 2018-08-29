@@ -29,8 +29,20 @@ var detectNetwork = function(cardNumber) {
     }
   }
   
+  if(card.slice(0,1) === '4'){
+    if(card.length === 13 || card.length === 16 || card.length === 19){
+      return 'Visa'
+    }
+  }
+  
+  if(Number(card.slice(0,2)) >=  51 && Number(card.slice(0,2)) <= 55){
+    if(card.length === 16){
+      return 'MasterCard'
+    }
+  }
+  
   else{ 
-    return 'No match found.'
+    return 'No match found. This should not happen.'
   }
 };
 
